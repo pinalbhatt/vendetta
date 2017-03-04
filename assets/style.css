@@ -811,6 +811,9 @@ color:#fff;
     border-bottom: solid 1px #1995dc;
     background: #1995dc;
 }
+.post-title {
+  color: #1995dc;
+}
 @media only screen and (max-width : 991px) {
   .post-img {
     margin-left: 0px !important;
