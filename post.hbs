@@ -9,16 +9,16 @@
 	<link itemprop="mainEntityOfPage" href="{{url absolute='true'}}" />
 	<meta itemprop="publisher" content="{{@blog.title}}"></meta>
 	{{#if image}}
-	<div class="col-md-6 header-flex-height" style="background:#000;">
+	<div class="col-md-4 header-flex-height" >
 		<div class="header-movable" style="z-index:11;">
 			{{> "header"}}
 		</div>
 		<div class="row header-movable background-setter hidden-xs hidden-sm" style="background-image:url({{image}});height:100%; padding-right:15px;"></div>
 		<div class="row visible-xs visible-sm">
-			<img src={{image}} itemprop="image" style="width:100%;">
+			<img src={{image}} itemprop="image" style="img-responsive" >
 		</div>
 	</div>
-	<div class="col-md-6 post-has-img" >
+	<div class="col-md-8 post-has-img" >
 		<div class="visible-md visible-lg" style="height:30px;"></div>
 		{{else}}
 		<div class="col-sm-12" style="height:100%">
