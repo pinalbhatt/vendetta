@@ -1,15 +1,17 @@
 <footer class="footer row">
 		<div class="col-md-10 col-md-offset-1">
-			<div class="row ">
-				<div class="col-xs-12 newsletter-title">
-
-				</div>
-			</div>
 			<div class="row">
 				<div class="col-sm-6 newsletter-fancyfooter">
+					<div class="col-xs-12 newsletter-title">
+					</div>
 					{{> "newsletter"}}
 				</div>
-				<div class="col-sm-6 text-right">
+				<div class="col-sm-6 text-center">
+					<section class="copyright">
+						<a href="{{@blog.url}}"><i class="fa fa-home"></i> Home</a> |  
+						<a href="{{@blog.url}}/About"><i class="fa fa-user"></i> About</a> |
+						<a href="{{@blog.url}}/Disclaimer"><i class="fa fa-info"></i> Disclaimer</a> 
+					</section>
 					{{> "link-blog"}}
 				</div>
 			</div>

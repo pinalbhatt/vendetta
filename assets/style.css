@@ -130,7 +130,7 @@ input:-moz-placeholder { color: #555; }
   color:#000;
 }
 .footer .newsletter-title:before{
-  content: "Enter your email address to be informed when a new blog hits the site";
+  content: "Subscribe via email";
   font-family: 'Roboto';
   color: #999;
   display: block;

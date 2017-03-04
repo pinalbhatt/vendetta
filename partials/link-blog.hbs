@@ -9,7 +9,8 @@
     youtube:"youtube-square",
     flickr:"flickr",
     tumblr:"tumblr-square",
-    instagram:"instagram"
+    instagram:"instagram",
+    github:"github"
   }
   var map2={
     twitter:"Twitter",
@@ -19,14 +20,15 @@
     youtube:"Youtube",
     flickr:"Flickr",
     tumblr:"Tumblr",
-    instagram:"Instagram"
+    instagram:"Instagram",
+    github:"Github"
   }
   var lm=document.getElementById("linkme");
   for(var key in velma.url){
     if(key!=="end")
-    lm.innerHTML+='<a class="transitioned2" target="_blank" title="'+map2[key]+'" href="'+velma.url[key]+'"><i class="fa fa-'+map[key]+'"></i></a>';
+    lm.innerHTML+='<a class="transitioned2" target="_blank" title="'+map2[key]+'" href="'+velma.url[key]+'"><i class="fa fa-lg fa-'+map[key]+'"></i></a>';
   }
-  lm.innerHTML+='<a class="transitioned2" target="_blank" title="RSS Feed" href="{{@blog.url}}/rss/"><i class="fa fa-rss"></i></a>';
+  lm.innerHTML+='<a class="transitioned2" target="_blank" title="RSS Feed" href="{{@blog.url}}/rss/"><i class="fa fa-lg fa-rss"></i></a>';
   lm.id='';
 }();
 </script>
