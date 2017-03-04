@@ -804,3 +804,22 @@ color:#fff;
       text-align: right;
   }
 }
+/*  PBDesk Custom */
+
+
+.normal-header {
+    border-bottom: solid 1px #1995dc;
+    background: #1995dc;
+}
+@media only screen and (max-width : 991px) {
+  .post-img {
+    margin-left: 0px !important;
+    padding-top: 1px;
+  }
+}
+@media only screen and (min-width : 991px) {
+  .post-img {
+    margin-left: 0px !important;
+    padding-top: 51px;
+  }
+}

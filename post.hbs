@@ -9,11 +9,11 @@
 	<link itemprop="mainEntityOfPage" href="{{url absolute='true'}}" />
 	<meta itemprop="publisher" content="{{@blog.title}}"></meta>
 	{{#if image}}
-	<div class="col-md-4 header-flex-height" >
+	<div class="col-md-4 header-flex-height" style="padding: 0" >
 		<div class="header-movable" style="z-index:11;">
 			{{> "header"}}
 		</div>
-		<div class="row header-movable background-sette">
+		<div class="row header-movable background-sette post-img text-center" >
 			<img src={{image}} itemprop="image" style="img-responsive" >
 		</div>
 	</div>
@@ -32,10 +32,14 @@
 				<header class="col-xs-12">
 					<div class="visible-md visible-lg" style="height:15px;"></div>
 					<section>
-						{{tags prefix='<span class="post-tags row"><div class="inline-block-middle" style="border-top:solid 3px #d6a915; margin-right:10px;width:50px;"></div><span itemprop="keywords">' suffix="</span>__</span>" separator="</span> , <span itemprop='keywords'>"}}
-						<h2 class="post-title ptb30" itemprop="headline">
+						{{tags prefix='<span class="post-tags row">
+							<div class="inline-block-middle" style="border-top:solid 3px #1995dc; margin-right:10px;width:50px;"></div>
+							<i class="fa fa-tags" style="color:#1995dc"></i>
+							<span itemprop="keywords">' suffix="</span>__</span>" separator="</span> , <span itemprop='keywords'>"}}
+						<h2 class="post-title" itemprop="headline">
 							{{title}}
 						</h2>
+						<hr/>
 						<div class="visible-md visible-lg" style="height:15px;"></div>
 					</section>
 				</header>
