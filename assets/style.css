@@ -817,6 +817,13 @@ color:#fff;
 .header-link .linkme a{
     text-shadow: 1px 1px 2px black;
 }
+.intro-txt {
+  font-family: 'Roboto', sans-serif;
+  
+      font-size: 14px;
+      line-height: 1.9;
+      color: #666;
+}
 @media only screen and (max-width : 991px) {
   .post-img {
     margin-left: 0px !important;

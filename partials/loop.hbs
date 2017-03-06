@@ -1,25 +1,19 @@
 {{! This is the post loop - each post will be output using this markup }}
 {{#foreach posts}}
   {{#if featured}}
-  {{#if @odd}}
+    {{#if @odd}}
       {{> "single-loop-post"}}
-  {{else}}
-  {{> "single-loop-post-rev"}}
-
+    {{else}}
+      {{> "single-loop-post-rev"}}
     {{/if}}
-
   {{/if}}
-
 {{/foreach}}
 {{#foreach posts}}
   {{^if featured}}
-  {{#if @odd}}
+    {{#if @odd}}
       {{> "single-loop-post"}}
-  {{else}}
-  {{> "single-loop-post-rev"}}
-
+    {{else}}
+      {{> "single-loop-post-rev"}}
     {{/if}}
-
   {{/if}}
-
 {{/foreach}}

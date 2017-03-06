@@ -6,11 +6,35 @@
 {{> "fancyHeader"}}
 <div class="row priority post-list-container-container">
 	<main role="main" class="col-md-10 col-md-offset-1 ptb50 mt30 post-list-container">
+        <div class="row">
+            <div class="col-md-6 ">
+                <p class="intro-txt text-justify">Hi Everyone! I'm Pinal Bhatt and Welcome to My Desk! On this site you'll find interesting posts, articles, tutorials, news updates and links on Microsoft.Net, ASP.NET, MVC, WebAPIs, C#, VB.Net, Silverlight, WPF, Windows8, Metro Apps, WCF, XAML, JavaScript, jQuery, AngularJS, NodeJS, MongoDB, Mocha,Design Patterns, Social Media, Mobiles, Science & Technology and other random thoughts and opinions.</p>
+            </div>
+            <div class="col-md-6 ">
+                <p class="intro-txt  text-justify">i am <em>Software Engineer</em>, and of course always on learning ramp! I created this site to narrate my coding and technology learning experiences. I like sharing my experiments, ideas and experience with everyone by writing articles on latest technological trends. I feel pleased and pride by sharing my knowledge and information that I have gained via Internet. And this site is my heartily attempt towards this.
+                    <br/>
+                    <a href="#">More about me</a> | <a href="#">Disclaimer</a>
+                </p>
+            </div>
+        </div>
+        <div class="row well">
+            <div class="col-md-3"><a href="/About"><i class="fa fa-user"></i> More about me</a></div>
+            <div class="col-md-3"><a href="/Blog"><i class="fa fa-files-o"></i> My Blog (all Posts)</a></div>
+            <div class="col-md-3"><a href="#"><i class="fa fa-flag"></i> Highlights</a></div>
+            <div class="col-md-3"><a href="/Disclaimer"><i class="fa fa-map-pin"></i> Disclaimer</a></div>
+        </div>
+        <div class="row text-center" style="max-height: 100px">
+            {{> "advertisement"}}
+        </div>
+        <div class="row text-center">
+            <h2 class="post-title pt30">Featured Posts</h2>
+            <div class="inline-block-middle" style="border-top:solid 3px #1995dc; margin-right:10px;width:50px;"></div>
+        </div>
 		{{! The tag below includes the post loop - partials/loop.hbs }}
 		<div class="row">
 		    {{> "loop"}}
 	    </div>
-	    {{pagination}}
+	   
 	</main>
 </div>
 <div class="container">
