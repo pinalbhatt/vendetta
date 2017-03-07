@@ -1,0 +1,18 @@
+<div class="panel panel-primary">
+    <div class="panel-heading text-center" >
+        <h3 class="panel-title"><i class="fa fa-tags"></i> Tags</h3>
+    </div>
+    <div class="panel-body" style="padding: 0 !important;">
+        <ul class="list-group">
+            {{#get "tags" include="count.posts"}}
+                {{#foreach tags}}
+                    <li class="list-group-item">
+                        <span class="badge">{{count.posts}}</span>
+                        <a href="/tag/{{slug}}">{{name}}</a>
+                    </li>
+                {{/foreach}}
+            {{/get}}
+        </ul>
+    </div>
+
+</div>
